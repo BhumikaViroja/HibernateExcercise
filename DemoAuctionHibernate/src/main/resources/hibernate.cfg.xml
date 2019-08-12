@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+  
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/day_4</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">postgres</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="com.mycompany.model.Address"/>
+        <mapping class="com.mycompany.model.BankAccount"/>
+        <mapping class="com.mycompany.model.Bid"/>
+        <mapping class="com.mycompany.model.Category"/>
+        <mapping class="com.mycompany.model.BillingDetails"/>
+        <mapping class="com.mycompany.model.Category"/>
+        <mapping class="com.mycompany.model.Comment"/>
+        <mapping class="com.mycompany.model.CreditCard"/>
+        <mapping class="com.mycompany.model.Item"/>
+        <mapping class="com.mycompany.model.Shipment"/>
+        <mapping class="com.mycompany.model.ShipmentUser"/>
+        <mapping class="com.mycompany.model.User"/>
+        <mapping class="com.mycompany.model.UserAddress"/>
+    </session-factory>
+</hibernate-configuration>
